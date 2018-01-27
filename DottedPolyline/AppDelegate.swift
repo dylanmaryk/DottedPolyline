@@ -6,6 +6,7 @@
 //  Copyright © 2018 dylanmaryk. All rights reserved.
 //
 
+import GoogleMaps
 import UIKit
 
 @UIApplicationMain
@@ -15,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyAp8qUevlYh0vbn1mWa7I5ewbcQj4acFTY")
         return true
     }
 
