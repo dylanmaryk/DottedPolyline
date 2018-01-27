@@ -12,6 +12,7 @@
 		35A496B9201CBF1B00740D5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A496B7201CBF1B00740D5C /* Main.storyboard */; };
 		35A496BB201CBF1B00740D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A496BA201CBF1B00740D5C /* Assets.xcassets */; };
 		35A496BE201CBF1B00740D5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A496BC201CBF1B00740D5C /* LaunchScreen.storyboard */; };
+		4D2BF94696E61205BDF8E62A /* Pods_DottedPolyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A74592B2F99EEB1FFE6308 /* Pods_DottedPolyline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		35A496BA201CBF1B00740D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35A496BD201CBF1B00740D5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35A496BF201CBF1B00740D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CD459025A116D31C303044E /* Pods-DottedPolyline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DottedPolyline.release.xcconfig"; path = "Pods/Target Support Files/Pods-DottedPolyline/Pods-DottedPolyline.release.xcconfig"; sourceTree = "<group>"; };
+		AFC201E134E382FA6F13EDCD /* Pods-DottedPolyline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DottedPolyline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DottedPolyline/Pods-DottedPolyline.debug.xcconfig"; sourceTree = "<group>"; };
+		B4A74592B2F99EEB1FFE6308 /* Pods_DottedPolyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DottedPolyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2BF94696E61205BDF8E62A /* Pods_DottedPolyline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2C4CCCFC4D53514406D8B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFC201E134E382FA6F13EDCD /* Pods-DottedPolyline.debug.xcconfig */,
+				5CD459025A116D31C303044E /* Pods-DottedPolyline.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		35A496A7201CBF1A00740D5C = {
 			isa = PBXGroup;
 			children = (
 				35A496B2201CBF1B00740D5C /* DottedPolyline */,
 				35A496B1201CBF1B00740D5C /* Products */,
+				1F2C4CCCFC4D53514406D8B9 /* Pods */,
+				DF85D53F2129BA644DD2A640 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = DottedPolyline;
 			sourceTree = "<group>";
 		};
+		DF85D53F2129BA644DD2A640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4A74592B2F99EEB1FFE6308 /* Pods_DottedPolyline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 35A496C2201CBF1B00740D5C /* Build configuration list for PBXNativeTarget "DottedPolyline" */;
 			buildPhases = (
+				F71ED27D7AE44571BC69660C /* [CP] Check Pods Manifest.lock */,
 				35A496AC201CBF1B00740D5C /* Sources */,
 				35A496AD201CBF1B00740D5C /* Frameworks */,
 				35A496AE201CBF1B00740D5C /* Resources */,
+				B8344F93C951587FA853A43B /* [CP] Embed Pods Frameworks */,
+				CB47B3055DA25FB4BF91AE84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B8344F93C951587FA853A43B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DottedPolyline/Pods-DottedPolyline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB47B3055DA25FB4BF91AE84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DottedPolyline/Pods-DottedPolyline-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DottedPolyline/Pods-DottedPolyline-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F71ED27D7AE44571BC69660C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DottedPolyline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		35A496AC201CBF1B00740D5C /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		35A496C3201CBF1B00740D5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFC201E134E382FA6F13EDCD /* Pods-DottedPolyline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +368,7 @@
 		};
 		35A496C4201CBF1B00740D5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CD459025A116D31C303044E /* Pods-DottedPolyline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
